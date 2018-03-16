@@ -12,13 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69d9fb78-1158-498d-bf5e-b1ee08035421" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change beforePath="$PROJECT_DIR$/src/FusionEKF.cpp" afterPath="$PROJECT_DIR$/src/FusionEKF.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/kalman_filter.cpp" afterPath="$PROJECT_DIR$/src/kalman_filter.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/kalman_filter.h" afterPath="$PROJECT_DIR$/src/kalman_filter.h" />
-      <change beforePath="$PROJECT_DIR$/src/tools.cpp" afterPath="$PROJECT_DIR$/src/tools.cpp" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
