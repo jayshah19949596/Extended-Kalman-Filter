@@ -10,10 +10,10 @@ This project utilizes a kalman filter to estimate the state of a moving object o
   1] [FusionEKF.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/FusionEKF.cpp)     	  
   2] [FusionEKF.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/FusionEKF.h)              
   3] [json.hpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/json.hpp) 	  
-  4] [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp)	    
-  5] [kalman_filter.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.h)	   
-  6] [main.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/main.cpp) 	   
-  7] [measurement_package.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/measurement_package.h)           	
+  4] [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp)	        
+  5] [kalman_filter.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.h)	            
+  6] [main.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/main.cpp) 	        
+  7] [measurement_package.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/measurement_package.h)                                       	
   8] [tools.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/tools.cpp)      
   9] [tools.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/tools.h)       
   
@@ -37,7 +37,7 @@ This project utilizes a kalman filter to estimate the state of a moving object o
    - Defines the `Predict()` function of `KalmanFilter` class
    - Defines the `UpdateEKF()` function of `KalmanFilter` class
    - Defines the `Update()` function of `KalmanFilter` class
-   - The above function implements the actual calcualtions of the kalman filter 
+   - The above functions implements the actual calcualtions of the kalman filter 
 
 4] [tools.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/tools.cpp) 
    - Defines the function `CalculateRMSE()` function of class `Tools` to calculate RMSE 
