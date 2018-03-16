@@ -6,10 +6,11 @@ This project utilizes a kalman filter to estimate the state of a moving object o
 ----
 
 - The src folder has the source code of the project
-- It has the following files:	
-  1] [FusionEKF.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/FusionEKF.cpp)	
-  2] [FusionEKF.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/FusionEKF.h)    
-  3] [json.hpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/json.hpp) 	
+- It has the following files:	 
+
+  1] [FusionEKF.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/FusionEKF.cpp)	  
+  2] [FusionEKF.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/FusionEKF.h)     
+  3] [json.hpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/json.hpp) 	 
   4] [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp)	
   5] [kalman_filter.h](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.h)	 
   6] [main.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/main.cpp) 	
