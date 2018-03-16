@@ -76,15 +76,15 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state)
     c12 = sqrt(c00);
     c32 = (c00*c12);
 
+    Jacobian << 0, 0, 0, 0,
+                0, 0, 0, 0,
+                0, 0, 0, 0;
+
     if (fabs(c00) < 0.0001)
     {
         std::cout << "CalculateJacobian () - Error - Division by Zero" << std::endl;
         return Jacobian;
     }
-
-    Jacobian << 0, 0, 0, 0,
-                0, 0, 0, 0,
-                0, 0, 0, 0;
 
     Jacobian(0, 0) = px / c12;
     Jacobian(0, 1) = py / c12;
