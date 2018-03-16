@@ -80,9 +80,9 @@ void KalmanFilter::UpdateEKF(const VectorXd &z)
     NormalizeAngle(y(1));
     //UpdateCommon(y);
     MatrixXd Ht = H_.transpose();
-    MatrixXd S = H_ * P_ * Ht + R_;
-    MatrixXd Si = S.inverse();
     MatrixXd PHt = P_ * Ht;
+    MatrixXd S = H_ * PHt + R_;
+    MatrixXd Si = S.inverse();
     MatrixXd K = PHt * Si;
 
 
