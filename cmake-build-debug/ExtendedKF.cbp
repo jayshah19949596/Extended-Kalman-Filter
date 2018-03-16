@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ExtendedKF"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ExtendedKF">
+				<Option output="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/ExtendedKF.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/include"/>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/msys64/mingw32/lib/gcc/../../include/c++/5.4.0"/>
+					<Add directory="C:/msys64/mingw32/lib/gcc/../../include/c++/5.4.0/i686-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw32/lib/gcc/../../include/c++/5.4.0/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 ExtendedKF"/>
+					<CompileFile command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ExtendedKF/fast">
+				<Option output="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/ExtendedKF.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/include"/>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.4.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/msys64/mingw32/lib/gcc/../../include/c++/5.4.0"/>
+					<Add directory="C:/msys64/mingw32/lib/gcc/../../include/c++/5.4.0/i686-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw32/lib/gcc/../../include/c++/5.4.0/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 ExtendedKF/fast"/>
+					<CompileFile command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.h">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.h">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/main.cpp">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/tools.cpp">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/src/tools.h">
+			<Option target="ExtendedKF"/>
+		</Unit>
+		<Unit filename="C:/Users/jaysh/Desktop/SDCND T2/ExtendedKF/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
