@@ -31,7 +31,7 @@ This project utilizes a kalman filter to estimate the state of a moving object o
    - Initializes the kalman filter
    - Calls `Predict()` function of `KalmanFilter` class. The body `Predict()` is defined in [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp) file
    - Calls `UpdateEKF()` function of `KalmanFilter` class if the sensor data is RADAR. The body `UpdateEKF()` is defined in [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp) file. `UpdateEKF()` function updates the state matrix with extended kalman filter function by calcualting the Jacobian.   
-   - Calls `Update()` function of `KalmanFilter` class if the sensor data is LASER. The body `UpdateEKF()` is defined in [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp) file. `Update()` function updates the state matrix with simple kalman filter function (No need to calcualte the Jacobian).
+   - Calls `Update()` function of `KalmanFilter` class if the sensor data is LASER. The body `Update()` is defined in [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp) file. `Update()` function updates the state matrix with simple kalman filter function (No need to calcualte the Jacobian).
    
 3] [kalman_filter.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/kalman_filter.cpp)
    - Defines the `Predict()` function of `KalmanFilter` class
