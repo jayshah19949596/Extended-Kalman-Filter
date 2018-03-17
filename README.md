@@ -2,6 +2,22 @@
 ----
 This project utilizes a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements.
 
+# Overview of Kalman Filter
+----
+
+[image1]: ./Docs/kalman_filter_algo.PNG "Kalman Filter"
+
+![Kalman Filter Overview][image1]
+
+- Imagine you are in a car equipped with sensors on the outside. The car sensors can detect objects moving around: for example, the sensors might detect a pedestrian, as described in the video, or even a bicycle. For variety, let's step through the Kalman Filter algorithm using the bicycle example.
+
+- The Kalman Filter algorithm will go through the following steps:   
+     **1] First Measurement** - the filter will receive initial measurements of the bicycle's position relative to the car. These measurements will come from a radar or lidar sensor.    
+     **2] Initialize State and Covariance matrices** - the filter will initialize the bicycle's position based on the first measurement. Then the car will receive another sensor measurement after a time period Δt.   
+     **3] Predict** - the algorithm will predict where the bicycle will be after time Δt. One basic way to predict the bicycle location after Δt is to assume the bicycle's velocity is constant; thus the bicycle will have moved velocity x [Δt]. In the extended Kalman filter lesson, we will assume the velocity is constant; in the unscented Kalman filter lesson, we will introduce a more complex motion model.     
+     **4] Update ** - the filter compares the "predicted" location with what the sensor measurement says. The predicted location and the measured location are combined to give an updated location. The Kalman filter will put more weight on either the predicted location or the measured location depending on the uncertainty of each value. Then the car will receive another sensor measurement after a time period Δt. The algorithm then does another predict and update step.   
+
+
 # Program Architecture
 ----
 
