@@ -1,4 +1,4 @@
-# Extended Kalman Filter Project Starter Code
+# Extended Kalman Filter Project 
 ----
 This project utilizes a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements.
 
@@ -9,7 +9,7 @@ This project utilizes a kalman filter to estimate the state of a moving object o
 
 ![Kalman Filter Overview][image1]
 
-- Imagine you are in a car equipped with sensors on the outside. The car sensors can detect objects moving around: for example, the sensors might detect a pedestrian, as described in the video, or even a bicycle. For variety, let's step through the Kalman Filter algorithm using the bicycle example.
+- Imagine you are in a car equipped with sensors on the outside. The car sensors can detect objects moving around: for example, the sensors might detect a pedestrian, or even a bicycle. For variety, let's step through the Kalman Filter algorithm using the bicycle example.
 
 - The Kalman Filter algorithm will go through the following steps:   
      **1] First Measurement** - the filter will receive initial measurements of the bicycle's position relative to the car. These measurements will come from a radar or lidar sensor.    
