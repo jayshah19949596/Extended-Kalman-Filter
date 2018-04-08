@@ -49,7 +49,8 @@ Following goals were achieved as a part of implementation:
 
 3. RADAR measures the radial distance, the bearing (or angle of orientation w.r.t car) and the radial velocity. This is represented below:  
 
-![RADAR measurement][image5]
+![RADAR measurement][image5]   
+
 Hence, the measurement function for RADAR updates, given by H_radar, is a non-linear transform given by:   
 
 ![RADAR measurement function][image6]
