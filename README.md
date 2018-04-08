@@ -4,8 +4,13 @@ This project utilizes a kalman filter to estimate the state of a moving object o
 
 # Overview of Kalman Filter
 ----
-
 [image1]: ./Docs/kalman_filter_algo.PNG "Kalman Filter"
+[image2]: ./Docs/state_vector.PNG "State Vector"
+[image3]: ./Docs/state_transition_equation.PNG "State Transition"
+[image4]: ./Docs/H_laser.PNG "H_laser Matrix"
+[image5]: ./Docs/radial_distance.PNG "RADAR measurement"
+[image6]: ./Docs/radar_updates.PNG "RADAR measurement function"
+[image7]: ./Docs/rmse_equation.PNG "RMSE"
 
 ![Kalman Filter Overview][image1]
 
@@ -17,6 +22,46 @@ This project utilizes a kalman filter to estimate the state of a moving object o
      **3] Predict** - the algorithm will predict where the bicycle will be after time Δt. One basic way to predict the bicycle location after Δt is to assume the bicycle's velocity is constant; thus the bicycle will have moved velocity x [Δt]. In the extended Kalman filter lesson, we will assume the velocity is constant; in the unscented Kalman filter lesson, we will introduce a more complex motion model.     
      **4] Update** - the filter compares the "predicted" location with what the sensor measurement says. The predicted location and the measured location are combined to give an updated location. The Kalman filter will put more weight on either the predicted location or the measured location depending on the uncertainty of each value. Then the car will receive another sensor measurement after a time period Δt. The algorithm then does another predict and update step.   
 
+# State vector and model
+----
+For this project, a Constant Velocity (CV) model is assumed while building state vector. The state vector contains following components:
+
+1. Position of object in X axis (px)
+2. Position of object in Y axis (py)
+3. Velocity of object in X axis (vx)
+4. Velocity of object in Y axis (vy)
+
+where X and Y axis are relative to the direction in which the self driving car moves, shown below:
+
+![EKF axes definition][image2]
+
+
+# Extended Kalman Filter Implementation Algorithm:
+----
+Following goals were achieved as a part of implementation:
+
+1. Build the state vector and the state transition matrix. Derive state transition equation. This represents the deterministic part of motion model. Stochastic part of motion is modelled by assuming Gaussian noise with zero mean and standard deviation as σax (For acceleration in X component) and σay (For acceleration in Y component). The state transition equation then derived is shown below:
+![CV model state transition equation][image3]
+
+2. LIDAR measures the distance between self driving car and an object in X and Y axis. Hence, the measurement function for LASER updates, given by H_laser, is a linear transform shown below:
+![LASER measurement function][image4]
+
+3. RADAR measures the radial distance, the bearing (or angle of orientation w.r.t car) and the radial velocity. This is represented below:   
+![RADAR measurement][image5]
+Hence, the measurement function for RADAR updates, given by H_radar, is a non-linear transform given by:  
+![RADAR measurement function][image6]
+
+4. Now that the state transition and measurement functions are derived, Kalman filter is used to estimate the path of moving object. Upon receiving a measurement for timestamp k+1, following processes are triggered:
+  a. Kalman filter Predict to use the state vector at timestamp k (Xk) and **predict** the state vector at timestamp k (Xk+1). This is the updated belief after motion.
+  b. Use the measurement and update the belief using Kalman filter **update** once measurement is received.
+  
+5. Kalman filter predict step is same for LASER and RADAR measurements.
+
+6. In case of LASER measurement, use normal Kalman filter equations. In case of RADAR update, use Extended Kalman Filter equations which assumes linear approximation around mean of the measurement function.
+
+7. Calculate the root mean squared error (RMSE) after Kalman filter update at each time step. This is given by:
+
+![RMSE equation][image7]
 
 # Program Architecture
 ----
@@ -61,7 +106,7 @@ This project utilizes a kalman filter to estimate the state of a moving object o
 
 
 # Required Installation and Detials
-
+----
 - Download the Simulator [here](https://github.com/udacity/self-driving-car-sim/releases)
 - [uWebSocketIO](https://github.com/uNetworking/uWebSockets) package is required so that main.cpp can communicate with the simulator
 - [uWebSocketIO](https://github.com/uNetworking/uWebSockets) package facilitates the connection between the simulator and [main.cpp](https://github.com/jayshah19949596/Extended-Kalman-Filter/blob/master/src/main.cpp)
@@ -93,7 +138,7 @@ This project utilizes a kalman filter to estimate the state of a moving object o
 
 
 # Running the Simulator 
----
+----
 
 1] Open the Simulator after you run the `./ExtendedKF ` command   
 2] Click on "SELECT" Option   
@@ -101,11 +146,13 @@ This project utilizes a kalman filter to estimate the state of a moving object o
 
 
 # INPUT: values provided by the simulator to the c++ program
+----
 
 ["sensor_measurement"] => the measurement that the simulator observed (either lidar or radar)
 
 
 # OUTPUT: values provided by the c++ program to the simulator
+----
 
 ["estimate_x"] <= kalman filter estimated position x  
 ["estimate_y"] <= kalman filter estimated position y  
