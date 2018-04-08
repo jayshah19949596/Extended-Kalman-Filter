@@ -43,15 +43,18 @@ Following goals were achieved as a part of implementation:
 1. Build the state vector and the state transition matrix. Derive state transition equation. This represents the deterministic part of motion model. Stochastic part of motion is modelled by assuming Gaussian noise with zero mean and standard deviation as σax (For acceleration in X component) and σay (For acceleration in Y component). The state transition equation then derived is shown below:
 ![CV model state transition equation][image3]
 
-2. LIDAR measures the distance between self driving car and an object in X and Y axis. Hence, the measurement function for LASER updates, given by H_laser, is a linear transform shown below:
+2. LIDAR measures the distance between self driving car and an object in X and Y axis. Hence, the measurement function for LASER updates, given by H_laser, is a linear transform shown below:  
+
 ![LASER measurement function][image4]
 
-3. RADAR measures the radial distance, the bearing (or angle of orientation w.r.t car) and the radial velocity. This is represented below:   
+3. RADAR measures the radial distance, the bearing (or angle of orientation w.r.t car) and the radial velocity. This is represented below:  
+
 ![RADAR measurement][image5]
-Hence, the measurement function for RADAR updates, given by H_radar, is a non-linear transform given by:  
+Hence, the measurement function for RADAR updates, given by H_radar, is a non-linear transform given by:   
+
 ![RADAR measurement function][image6]
 
-4. Now that the state transition and measurement functions are derived, Kalman filter is used to estimate the path of moving object. Upon receiving a measurement for timestamp k+1, following processes are triggered:
+4. Now that the state transition and measurement functions are derived, Kalman filter is used to estimate the path of moving object. Upon receiving a measurement for timestamp k+1, following processes are triggered:  
   a. Kalman filter Predict to use the state vector at timestamp k (Xk) and **predict** the state vector at timestamp k (Xk+1). This is the updated belief after motion.
   b. Use the measurement and update the belief using Kalman filter **update** once measurement is received.
   
